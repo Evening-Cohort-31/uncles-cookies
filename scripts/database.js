@@ -1,4 +1,4 @@
-const database = {
+export const database = {
   cookies: [
     {
       id: 1,
