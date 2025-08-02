@@ -1,0 +1,14 @@
+header {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+header h1 {
+   color: purple;
+   font-family: 'Fascinate', 'fantasy', sans-serif;
+}
+
+header p {
+    color: purple;
+    font-family: 'Fascinate', 'fantasy', sans-serif;
+}
