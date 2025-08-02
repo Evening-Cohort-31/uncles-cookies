@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    max-height: 200px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(255, 208, 163);
+
+}
+
+header h1 {
+   color: purple;
+   font-family: 'Fascinate', 'fantasy', sans-serif;
+}
+
+header p {
+    color: purple;
+    font-family: 'Fascinate', 'fantasy', sans-serif;
+}
+
+header img {
+    object-fit: contain;
+    padding: 10px;
+    width: 100px;
+    flex: 0 0 auto;
+}
+
+.header__text {
+    display: flex;;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    max-width: 30%;
+}
