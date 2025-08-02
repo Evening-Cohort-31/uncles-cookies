@@ -35,9 +35,10 @@ header img {
 }
 
 .header__text {
-    display: flex;
+    display: flex;;
     align-items: center;
     flex-direction: column;
+    justify-content: space-around;
     flex-wrap: nowrap;
     flex-grow: 1;
     max-width: 30%;
