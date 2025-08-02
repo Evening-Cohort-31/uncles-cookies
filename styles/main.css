@@ -1,6 +1,14 @@
 header {
     text-align: center;
     border-bottom: 1px solid black;
+    display: flex;
+    max-height: 200px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: center;
+    flex-shrink: 1;
+    width: 100%;
 }
 
 header h1 {
@@ -11,4 +19,20 @@ header h1 {
 header p {
     color: purple;
     font-family: 'Fascinate', 'fantasy', sans-serif;
+}
+
+header img {
+    object-fit: contain;
+    padding: 10px;
+    width: 100px;
+    flex: 0 0 auto;
+}
+
+.header__text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    max-width: 30%;
 }
