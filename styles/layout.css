@@ -16,23 +16,7 @@
   margin-bottom: 1.5rem;
 }
 
-.cookie-card__image, .ice-cream-card__image {
-  width: 100px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
 .cookie-card__text, .ice-cream-card__text {
   display: flex;
   flex-direction: column;
-}
-
-.cookie-card__name, .ice-cream-card__name {
-  font-weight: bold;
-  margin: 0 0 0.5rem;
-}
-
-.cookie-card__description, .ice-cream-card__description {
-  margin: 0;
 }
