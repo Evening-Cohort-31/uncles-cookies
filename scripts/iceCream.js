@@ -3,11 +3,13 @@ import { database } from './database.js'
 
 export const iceCreamList = () => {
     // Generate an HTML representation of each cookie card
-    return database.iceCream.map(scoop => 
+    return database.iceCream.map(scoop =>
         `<div class="ice-cream-card">
-            <h3>${scoop.name}!</h3>
-            <p>${scoop.description}</p>
-            <img src= "${scoop.img}" alt="${scoop.name} image" class="iceCream__image">
+            <img src= "${scoop.img}" alt="${scoop.name} image" class="ice-cream-card__image">
+            <div class="ice-cream-card__text">
+                <h3 class="ice-cream-card__name">${scoop.name}!</h3>
+                <p class="ice-cream-card__description">${scoop.description}</p>
+            </div>
         </div>`
     ).join("")
 }

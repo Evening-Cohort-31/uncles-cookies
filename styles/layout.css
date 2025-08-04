@@ -1,0 +1,22 @@
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem; /* optional spacing between columns */
+}
+
+.main-content__left-column,
+.main-content__right-column {
+  flex: 1; /* each takes up equal space */
+}
+
+.cookie-card, .ice-cream-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cookie-card__text, .ice-cream-card__text {
+  display: flex;
+  flex-direction: column;
+}
