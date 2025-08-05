@@ -1,6 +1,6 @@
 import { database } from './database.js'
 
-
+database.iceCream.sort((a, b) => a.name.localeCompare(b.name));
 export const iceCreamList = () => {
     // Generate an HTML representation of each cookie card
     return database.iceCream.map(scoop =>
