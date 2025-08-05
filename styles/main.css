@@ -11,7 +11,7 @@
 
 .main-content__h2{
     font-family: 'Fascinate', 'fantasy', sans-serif;
-    color: purple;
+    color: #9D4EDD;
     text-align: center;
     margin-bottom: 1rem;
     font-size: 2rem;
@@ -22,7 +22,7 @@
     margin-top: 1rem;
     margin-bottom: 2rem;
     width: 100%;
-    background-color: rgb(255, 208, 163);
+    background-color: #FFF2D7;
     border-radius: 8px;
 }
 
@@ -31,13 +31,14 @@
     padding: 1rem;
     margin: 1rem;
     border: 1px solid #ccc;
-    background-color: purple;
+    background-color: #FDE2FF;
     color: white;
     border-radius: 8px;
 }
 
 header {
     text-align: center;
+    padding: 10px;
     display: flex;
     max-height: 200px;
     flex-wrap: nowrap;
@@ -45,29 +46,115 @@ header {
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    background-color: rgb(255, 208, 163);
+    background-color: #FFF2D7;
 
 }
 
 header h1 {
-   color: purple;
-   font-family: 'Fascinate', 'fantasy', sans-serif;
+    font-family: 'Fascinate', 'fantasy', sans-serif;
+    color: #9D4EDD;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.5rem;
+    margin-top: 1rem;
 }
 
 header p {
-    color: purple;
+    color: #9D4EDD;
     font-family: 'Fascinate', 'fantasy', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.5rem;
 }
 
-header img {
+.header__img {
     object-fit: contain;
-    padding: 10px;
     width: 100px;
     flex: 0 0 auto;
+    display: block;
+}
+
+.header__img--cookie {
+  border: 5px dotted #89CFF0;
+  border-radius: 8px;
+}
+
+.header__img--icecream {
+  border: 5px dashed #FFB6C1;
+  border-radius: 8px;
+}
+
+/* 
+Smoothly animate the border and scale (transform) when the header images are hovered.
+This helps create a subtle transition effect instead of an instant jump.
+Applies to both the cookie and ice cream header images.
+*/
+.header__img--cookie,
+.header__img--icecream {
+  transition: border 0.3s ease, transform 0.3s ease;
+}
+
+/* 
+On hover, scale the image up slightly and trigger a pulsing glow animation.
+Each image gets a differently colored glow: blue for cookies, pink for ice cream.
+*/
+.header__img--cookie:hover,
+.header__img--icecream:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 
+Create a pulsing glow effect using box-shadow animation.
+- use @keyframes to key steps of the animation
+- 0%: Start with no glow.
+- 50%: Glow fully expands to 15px (visible glow).
+- 100%: Glow fades back to no glow.
+This loop creates a smooth pulsing effect that repeats over time.
+*/
+@keyframes pulse-glow-blue {
+  0% {
+    box-shadow: 0 0 0px #89CFF0;
+  }
+  50% {
+    box-shadow: 0 0 15px #89CFF0;
+  }
+  100% {
+    box-shadow: 0 0 0px #89CFF0;
+  }
+}
+
+@keyframes pulse-glow-pink {
+  0% {
+    box-shadow: 0 0 0px #FFB6C1;
+  }
+  50% {
+    box-shadow: 0 0 15px #FFB6C1;
+  }
+  100% {
+    box-shadow: 0 0 0px #FFB6C1;
+  }
+}
+
+/* Apply animation on hover */
+.header__img--cookie:hover {
+  animation: pulse-glow-blue 1s infinite;
+  transform: scale(1.05);
+  border: 5px dotted #89CFF0;
+}
+
+.header__img--icecream:hover {
+    animation: pulse-glow-pink 1s infinite;
+  transform: scale(1.05);
+border: 5px dashed #FFB6C1;
 }
 
 .header__text {
-    display: flex;;
+    display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
@@ -77,12 +164,21 @@ header img {
 }
 
 .cookie-card, .ice-cream-card {
-    background-color: white;
+    background: linear-gradient(135deg, #fffdf7, #fef6ff);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     color: black;
     border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 1rem;
-    margin: 1rem;
+    border-radius: 16px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.cookie-card {
+  border: 5px dotted #89CFF0;
+}
+
+.ice-cream-card {
+  border: 5px dashed pink;
 }
 
 .cookie-card__image, .ice-cream-card__image {
@@ -98,5 +194,7 @@ header img {
 }
 
 .cookie-card__description, .ice-cream-card__description {
-  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-style: italic;
+  font-size: 1rem;
 }
