@@ -1,14 +1,14 @@
-const cartCount = document.querySelector(".shopping_cart_count")
+const cartCount = document.querySelector(".cart__icon__counter")
 
-const buttons = document.querySelectorAll(".add_to_cart")
+const buttons = document.querySelectorAll(".card__button")
 
-const cartIcon = document.querySelector("#cart");
+const cartIcon = document.querySelector(".cart__icon__img");
 
-const cartList = document.querySelector(".cart_list")
+const cartList = document.querySelector(".cart__list__ul")
 
-const cartListContainer = document.querySelector(".cart_list_container")
+const cartListContainer = document.querySelector(".cart__list")
 
-const total = document.querySelector(".total")
+const total = document.querySelector(".cart__list__total")
 
 let cart = []
 let count = 0

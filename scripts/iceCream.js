@@ -5,9 +5,9 @@ export const iceCreamList = () => {
     // Generate an HTML representation of each cookie card
     return database.iceCream.map(scoop =>
         `<div class="ice-cream-card">
-            <div class="image_button_container">
+            <div class="card__img__button__container">
                 <img src= "${scoop.img}" alt="${scoop.name} image" class="ice-cream-card__image">
-                <button class="add_to_cart" data-name="${scoop.name}">Add to Cart</button>
+                <button class="card__button" data-name="${scoop.name}">Add to Cart</button>
             </div>
             <div class="ice-cream-card__text">
                 <h3 class="ice-cream-card__name">${scoop.name}!</h3>

@@ -9,6 +9,26 @@
   flex: 1; /* each takes up equal space */
 }
 
+header {
+  text-align: center;
+  max-height: none;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  max-height: 15%;
+}
+
+header img {
+    object-fit: contain;
+    padding: 10px;
+    width: 100px;
+    flex: 0 1 auto;
+}
+
 .cookie-card, .ice-cream-card {
   display: flex;
   align-items: flex-start;
@@ -21,35 +41,36 @@
   flex-direction: column;
 }
 
-.shopping_cart {
+.cart {
   display: flex;
   flex-direction: row;
 }
 
-.cart_list li {
+.cart__list__li {
   text-align: left;
 }
 
-.cart_icon_container {
+.cart__icon {
   display: block;
   padding-right: 10px;
 }
 
-.cart_list_container {
+.cart__list {
   max-height: 200px;
   overflow-y: auto;
-  background-color: white;
-  border: 1px solid #ccc;
   width: 200px;
-  border-radius: 10px;
   padding: 5px;
 }
 
-.total {
+.cart__list__total {
   text-align: right;
 }
 
-.image_button_container {
+.card__img__button__container {
   display: flex;
   flex-direction: column;
+}
+
+.card__button {
+  padding: 5px;
 }
