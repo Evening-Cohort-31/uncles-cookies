@@ -1,90 +1,89 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .main-content {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
-.main-content__h2{
-    font-family: 'Fascinate', 'fantasy', sans-serif;
-    color: #9D4EDD;
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 0.5rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    width: 100%;
-    background-color: #FFF2D7;
-    border-radius: 8px;
+.main-content__h2 {
+  font-family: "Fascinate", "fantasy", sans-serif;
+  color: #9d4edd;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  background-color: #fff2d7;
+  border-radius: 8px;
 }
 
 .main-content__left-column,
 .main-content__right-column {
-    padding: 1rem;
-    margin: 1rem;
-    border: 1px solid #ccc;
-    background-color: #FDE2FF;
-    color: white;
-    border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid #ccc;
+  background-color: #fde2ff;
+  color: white;
+  border-radius: 8px;
 }
 
 header {
-    text-align: center;
-    padding: 10px;
-    display: flex;
-    max-height: 200px;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    background-color: #FFF2D7;
-
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  max-height: 200px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  background-color: #fff2d7;
 }
 
 header h1 {
-    font-family: 'Fascinate', 'fantasy', sans-serif;
-    color: #9D4EDD;
-    font-size: 2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 0.5rem;
-    margin-top: 1rem;
+  font-family: "Fascinate", "fantasy", sans-serif;
+  color: #9d4edd;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.5rem;
+  margin-top: 1rem;
 }
 
 header p {
-    color: #9D4EDD;
-    font-family: 'Fascinate', 'fantasy', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 0.5rem;
+  color: #9d4edd;
+  font-family: "Fascinate", "fantasy", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.5rem;
 }
 
 .header__img {
-    object-fit: contain;
-    width: 100px;
-    flex: 0 0 auto;
-    display: block;
+  object-fit: contain;
+  width: 100px;
+  flex: 0 0 auto;
+  display: block;
 }
 
 .header__img--cookie {
-  border: 5px dotted #89CFF0;
+  border: 5px dotted #89cff0;
   border-radius: 8px;
 }
 
 .header__img--icecream {
-  border: 5px dashed #FFB6C1;
+  border: 5px dashed #ffb6c1;
   border-radius: 8px;
 }
 
@@ -118,25 +117,25 @@ This loop creates a smooth pulsing effect that repeats over time.
 */
 @keyframes pulse-glow-blue {
   0% {
-    box-shadow: 0 0 0px #89CFF0;
+    box-shadow: 0 0 0px #89cff0;
   }
   50% {
-    box-shadow: 0 0 15px #89CFF0;
+    box-shadow: 0 0 15px #89cff0;
   }
   100% {
-    box-shadow: 0 0 0px #89CFF0;
+    box-shadow: 0 0 0px #89cff0;
   }
 }
 
 @keyframes pulse-glow-pink {
   0% {
-    box-shadow: 0 0 0px #FFB6C1;
+    box-shadow: 0 0 0px #ffb6c1;
   }
   50% {
-    box-shadow: 0 0 15px #FFB6C1;
+    box-shadow: 0 0 15px #ffb6c1;
   }
   100% {
-    box-shadow: 0 0 0px #FFB6C1;
+    box-shadow: 0 0 0px #ffb6c1;
   }
 }
 
@@ -144,57 +143,61 @@ This loop creates a smooth pulsing effect that repeats over time.
 .header__img--cookie:hover {
   animation: pulse-glow-blue 1s infinite;
   transform: scale(1.05);
-  border: 5px dotted #89CFF0;
+  border: 5px dotted #89cff0;
 }
 
 .header__img--icecream:hover {
-    animation: pulse-glow-pink 1s infinite;
+  animation: pulse-glow-pink 1s infinite;
   transform: scale(1.05);
-border: 5px dashed #FFB6C1;
+  border: 5px dashed #ffb6c1;
 }
 
 .header__text {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    flex-grow: 1;
-    max-width: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  max-width: 30%;
 }
 
-.cookie-card, .ice-cream-card {
-    background: linear-gradient(135deg, #fffdf7, #fef6ff);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    color: black;
-    border: 1px solid #ccc;
-    border-radius: 16px;
+.cookie-card,
+.ice-cream-card {
+  background: linear-gradient(135deg, #fffdf7, #fef6ff);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 16px;
   padding: 1.5rem;
   margin: 1.5rem 0;
 }
 
 .cookie-card {
-  border: 5px dotted #89CFF0;
+  border: 5px dotted #89cff0;
 }
 
 .ice-cream-card {
   border: 5px dashed pink;
 }
 
-.cookie-card__image, .ice-cream-card__image {
+.cookie-card__image,
+.ice-cream-card__image {
   width: 100px;
   height: auto;
   object-fit: cover;
   border-radius: 8px;
 }
 
-.cookie-card__name, .ice-cream-card__name {
+.cookie-card__name,
+.ice-cream-card__name {
   font-weight: bold;
   margin: 0 0 0.5rem;
 }
 
-.cookie-card__description, .ice-cream-card__description {
-  font-family: 'Quicksand', sans-serif;
+.cookie-card__description,
+.ice-cream-card__description {
+  font-family: "Quicksand", sans-serif;
   font-style: italic;
   font-size: 1rem;
 }

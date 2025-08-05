@@ -9,14 +9,16 @@
   flex: 1; /* each takes up equal space */
 }
 
-.cookie-card, .ice-cream-card {
+.cookie-card,
+.ice-cream-card {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
 
-.cookie-card__text, .ice-cream-card__text {
+.cookie-card__text,
+.ice-cream-card__text {
   display: flex;
   flex-direction: column;
 }
