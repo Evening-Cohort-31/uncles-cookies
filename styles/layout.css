@@ -1,7 +1,7 @@
 .main-content {
   display: flex;
   justify-content: space-between;
-  gap: 2rem; /* optional spacing between columns */
+  gap: 1rem; /* optional spacing between columns */
 }
 
 .main-content__left-column,
@@ -29,17 +29,39 @@ header img {
     flex: 0 1 auto;
 }
 
+header {
+  text-align: center;
+  max-height: none;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  max-height: 15%;
+}
+
+header img {
+    object-fit: contain;
+    padding: 10px;
+    width: 100px;
+    flex: 0 1 auto;
+}
+
 .cookie-card, .ice-cream-card {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
 
-.cookie-card__text, .ice-cream-card__text {
+.cookie-card__text,
+.ice-cream-card__text {
   display: flex;
   flex-direction: column;
 }
+
 
 .cart {
   display: flex;
