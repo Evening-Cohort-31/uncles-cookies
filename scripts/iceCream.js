@@ -7,7 +7,7 @@ export const iceCreamList = () => {
         `<div class="ice-cream-card">
             <div>
                 <img src= "${scoop.img}" alt="${scoop.name} image" class="ice-cream-card__image">
-                <button class="add_to_cart">Add to Cart</button>
+                <button class="add_to_cart" data-name=${scoop.name}>Add to Cart</button>
             </div>
             <div class="ice-cream-card__text">
                 <h3 class="ice-cream-card__name">${scoop.name}!</h3>
