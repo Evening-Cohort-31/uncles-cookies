@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:ital,wght@1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
@@ -24,6 +25,17 @@
     </section>
     <img class="header__img header__img--icecream"
       src="https://crumbl.video/cdn-cgi/image/width=600/https://crumbl.video/f41d8520-caf9-4d97-8746-2496030e34c0_VanillaBean_TubWithScoops_InStoreMenu_Transparent.png">
+    <div class="cart">
+      <div class="cart__icon">
+        <span class="material-icons cart__icon__img" >shopping_cart</span>
+        <i class="cart__icon__counter"></i>
+      </div>
+      <div class="cart__list" style="display: none">
+        <ul class="cart__list__ul"></ul>
+        <hr>
+        <p class="cart__list__total">Total:</p>
+      </div>
+    </div>
   </header>
 
 
@@ -44,6 +56,7 @@
     </div>
   </main>
   <script type="module" src="./scripts/main.js"></script>
+  <script type="module" src="./scripts/cart.js"></script>
 </body>
 
 </html>
