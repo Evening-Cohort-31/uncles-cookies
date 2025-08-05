@@ -7,6 +7,7 @@
 .main-content {
     background-color: white;
     color: black;
+    padding-top: 15%;
 }
 
 .main-content__h2{
@@ -38,15 +39,16 @@
 
 header {
     text-align: center;
+    max-height: none;
     display: flex;
-    max-height: 200px;
     flex-wrap: nowrap;
     overflow: hidden;
     flex-direction: row;
     justify-content: center;
     width: 100%;
     background-color: rgb(255, 208, 163);
-
+    position: fixed;
+    max-height: 15%;
 }
 
 header h1 {
@@ -63,7 +65,7 @@ header img {
     object-fit: contain;
     padding: 10px;
     width: 100px;
-    flex: 0 0 auto;
+    flex: 0 1 auto;
 }
 
 .header__text {
@@ -73,6 +75,7 @@ header img {
     justify-content: space-around;
     flex-wrap: nowrap;
     flex-grow: 1;
+    flex-shrink: 1;
     max-width: 30%;
 }
 
@@ -99,4 +102,11 @@ header img {
 
 .cookie-card__description, .ice-cream-card__description {
   margin: 0;
+}
+
+.add_to_cart {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: lightblue;
+    border: 1px solid #CCC 
 }

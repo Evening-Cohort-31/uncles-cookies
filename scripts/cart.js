@@ -6,6 +6,10 @@ const cartIcon = document.querySelector("#cart");
 
 const cartList = document.querySelector(".cart_list")
 
+const cartListContainer = document.querySelector(".cart_list_container")
+
+const total = document.querySelector(".total")
+
 let cart = []
 let count = 0
 
@@ -29,13 +33,14 @@ buttons.forEach(button => button.addEventListener('click', (e) => {
         html += `<li>${item.name}:  ${item.amount}</li>`
     }
     cartList.innerHTML = html;
+    total.innerHTML = `<p>Total:\t\t${count}</p>`
 }))
 
 cartIcon.addEventListener('click', () => {
-    if (cartList.style.display === "none") {
-        cartList.style.display = "block"
+    if (cartListContainer.style.display === "none") {
+        cartListContainer.style.display = "block"
     } else {
-        cartList.style.display ="none"
+        cartListContainer.style.display ="none"
 
 
     }
