@@ -93,7 +93,7 @@ header p {
     border-radius: 10px;
 }
 
-.add_to_cart {
+.card__button {
     background-color: lightblue;
     border: 1px solid #CCC;
     border-radius: 5px;
