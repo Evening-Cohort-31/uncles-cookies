@@ -1,6 +1,8 @@
 import { database } from './database.js'
 
 database.iceCream.sort((a, b) => a.name.localeCompare(b.name));
+
+
 export const iceCreamList = () => {
     // Generate an HTML representation of each cookie card
     return database.iceCream.map(scoop =>
@@ -13,8 +15,10 @@ export const iceCreamList = () => {
                 <h3 class="ice-cream-card__name">${scoop.name}!</h3>
                 <p class="ice-cream-card__description">${scoop.description}</p>
             </div>
-            <button data-ingredientslist= "Ingredients: ${scoop.ingredients} Calories: ${scoop.calories}" 
-                    class="iceCream__button"> View Ingredients
+            <button data-ingredientslist= "Ingredients: ${scoop.ingredients}"
+                    data-calories = "Calories: ${scoop.calories}" 
+                    data-type = "buttonStuff"
+                    class="cookie__button"> View Ingredients
         </div>`
     ).join("")
 }

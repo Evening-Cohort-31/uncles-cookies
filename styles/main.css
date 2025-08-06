@@ -208,32 +208,36 @@ This loop creates a smooth pulsing effect that repeats over time.
 }
 
 .cookie__button {
-  padding: 8px 12px;
-  background-color: #f44336;
-  color: white;
-  border: none;
-  border-radius: 6px;
+  padding: 4px 8px;
+  background-color: #f0f0f0; /* light grey */
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.2s ease;
+  font-size: 0.8rem;
+  font-weight: normal;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .cookie__button:hover {
-  background-color: #d32f2f;
+  background-color: #e6e6e6;
+  border-color: #999;
 }
 
 
 .iceCream__button {
-  padding: 8px 12px;
-  background-color: #f44336;
-  color: white;
-  border: none;
-  border-radius: 6px;
+  padding: 4px 8px;
+  background-color: #f0f0f0; /* light grey */
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.2s ease;
+  font-size: 0.8rem;
+  font-weight: normal;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .iceCream__button:hover {
-  background-color: #d32f2f;
+  background-color: #e6e6e6;
+  border-color: #999;
 }

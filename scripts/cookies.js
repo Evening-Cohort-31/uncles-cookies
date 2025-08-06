@@ -1,6 +1,19 @@
 import { database } from './database.js'
 
 database.cookies.sort((a, b) => a.name.localeCompare(b.name));
+
+document.addEventListener(
+    "click",
+    (newClickEvent) => {
+        const buttonGetsClickedOn = newClickEvent.target
+
+        if (buttonGetsClickedOn.dataset.type === "buttonStuff"){
+            window.alert(`${buttonGetsClickedOn.dataset.ingredientslist} \n${buttonGetsClickedOn.dataset.calories}`)
+        }
+    }
+)
+
+
 export const cookiesList = () => {
     // Generate an HTML representation of each cookie card
     return database.cookies.map(cookie =>
@@ -13,7 +26,9 @@ export const cookiesList = () => {
                 <h3 class="cookie-card__name">${cookie.name}!</h3>
                 <p class="cookie-card__description">${cookie.description}</p>
             </div>
-            <button data-ingredientslist= "Ingredients: ${cookie.ingredients} Calories: ${cookie.calories}" 
+            <button data-ingredientslist= "Ingredients: ${cookie.ingredients}"
+                    data-calories = "Calories: ${cookie.calories}" 
+                    data-type = "buttonStuff"
                     class="cookie__button"> View Ingredients
             </button>
         </div>`
