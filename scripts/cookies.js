@@ -10,6 +10,9 @@ export const cookiesList = () => {
                 <h3 class="cookie-card__name">${cookie.name}!</h3>
                 <p class="cookie-card__description">${cookie.description}</p>
             </div>
+            <button data-ingredientslist= "Ingredients: ${cookie.ingredients} Calories: ${cookie.calories}" 
+                    class="cookie__button"> View Ingredients
+            </button>
         </div>`
     ).join("")
 }

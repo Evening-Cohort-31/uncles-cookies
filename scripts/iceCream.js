@@ -10,6 +10,8 @@ export const iceCreamList = () => {
                 <h3 class="ice-cream-card__name">${scoop.name}!</h3>
                 <p class="ice-cream-card__description">${scoop.description}</p>
             </div>
+            <button data-ingredientslist= "Ingredients: ${scoop.ingredients} Calories: ${scoop.calories}" 
+                    class="iceCream__button"> View Ingredients
         </div>`
     ).join("")
 }

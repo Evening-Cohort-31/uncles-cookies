@@ -100,3 +100,34 @@ header img {
 .cookie-card__description, .ice-cream-card__description {
   margin: 0;
 }
+
+.cookie__button {
+  padding: 8px 12px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.cookie__button:hover {
+  background-color: #d32f2f;
+}
+
+
+.iceCream__button {
+  padding: 8px 12px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.iceCream__button:hover {
+  background-color: #d32f2f;
+}
