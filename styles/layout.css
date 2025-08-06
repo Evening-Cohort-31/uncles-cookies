@@ -22,11 +22,18 @@ header {
   max-height: 15%;
 }
 
+.navbar {
+  position: fixed;
+  top: 140px; /* Pushes it below the fixed header */
+  width: 100%;
+  height: auto;
+}
+
 header img {
-    object-fit: contain;
-    padding: 10px;
-    width: 100px;
-    flex: 0 1 auto;
+  object-fit: contain;
+  padding: 10px;
+  width: 100px;
+  flex: 0 1 auto;
 }
 
 header {
@@ -43,13 +50,14 @@ header {
 }
 
 header img {
-    object-fit: contain;
-    padding: 10px;
-    width: 100px;
-    flex: 0 1 auto;
+  object-fit: contain;
+  padding: 10px;
+  width: 100px;
+  flex: 0 1 auto;
 }
 
-.cookie-card, .ice-cream-card {
+.cookie-card,
+.ice-cream-card {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -61,7 +69,6 @@ header img {
   display: flex;
   flex-direction: column;
 }
-
 
 .cart {
   display: flex;

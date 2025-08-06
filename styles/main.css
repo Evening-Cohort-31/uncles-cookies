@@ -7,7 +7,7 @@
 .main-content {
   background-color: white;
   color: black;
-    padding-top: 15%;
+  padding-top: 15%;
 }
 
 .main-content__h2 {
@@ -38,7 +38,7 @@
 }
 
 header {
-    background-color: #fff2d7;
+  background-color: #fff2d7;
 }
 
 header h1 {
@@ -196,13 +196,13 @@ This loop creates a smooth pulsing effect that repeats over time.
 }
 
 .cart__list {
-    background-color: white;   
-    border: 1px solid #ccc;
-    border-radius: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
 }
 
 .card__button {
-    background-color: lightblue;
-    border: 1px solid #CCC;
-    border-radius: 5px;
+  background-color: lightblue;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
