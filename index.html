@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap v5.3 Stylesheet-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <!-- Personal Stylesheets-->
   <link rel="stylesheet" href="./styles/main.css">
   <link rel="stylesheet" href="./styles/layout.css">
   <title>Uncle's Cookies</title>
@@ -16,28 +20,48 @@
 </head>
 
 <body>
-  <header class="header">
-    <img class="header__img header__img--cookie"
-      src="https://crumbl.video/cdn-cgi/image/width=600/https://crumbl.video/b31ec433-ee3d-4ace-8758-6921d5c671c6_ChocolateChip_Aerial_Tech.png">
-    <section class="header__text">
-      <h1>Uncle's Cookies</h1>
-      <p>and Ice Cream!</p>
-    </section>
-    <img class="header__img header__img--icecream"
-      src="https://crumbl.video/cdn-cgi/image/width=600/https://crumbl.video/f41d8520-caf9-4d97-8746-2496030e34c0_VanillaBean_TubWithScoops_InStoreMenu_Transparent.png">
-    <div class="cart">
-      <div class="cart__icon">
-        <span class="material-icons cart__icon__img" >shopping_cart</span>
-        <i class="cart__icon__counter"></i>
+  <div class="fixed-container">
+    <!-- Header Section -->
+    <header class="header">
+      <img class="header__img header__img--cookie"
+        src="https://crumbl.video/cdn-cgi/image/width=600/https://crumbl.video/b31ec433-ee3d-4ace-8758-6921d5c671c6_ChocolateChip_Aerial_Tech.png">
+      <section class="header__text">
+        <h1>Uncle's Cookies</h1>
+        <p>and Ice Cream!</p>
+      </section>
+      <img class="header__img header__img--icecream"
+        src="https://crumbl.video/cdn-cgi/image/width=600/https://crumbl.video/f41d8520-caf9-4d97-8746-2496030e34c0_VanillaBean_TubWithScoops_InStoreMenu_Transparent.png">
+      <div class="cart">
+        <div class="cart__icon">
+          <span class="material-icons cart__icon__img">shopping_cart</span>
+          <i class="cart__icon__counter"></i>
+        </div>
+        <div class="cart__list" style="display: none">
+          <ul class="cart__list__ul"></ul>
+          <hr>
+          <p class="cart__list__total">Total:</p>
+        </div>
       </div>
-      <div class="cart__list" style="display: none">
-        <ul class="cart__list__ul"></ul>
-        <hr>
-        <p class="cart__list__total">Total:</p>
-      </div>
-    </div>
-  </header>
+    </header>
 
+    <!-- Bootstrap Navigation Bar Section -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="navbar-nav d-flex w-75 d-flex justify-content-between px-5">
+          <a class="nav-link flex-grow-1 text-center fw-semibold fs-5 active" aria-current="page" href="#">Home</a>
+          <a class="nav-link flex-grow-1 text-center fw-semibold fs-5" href="#">Cookies</a>
+          <a class="nav-link flex-grow-1 text-center fw-semibold fs-5" href="#">Ice Cream</a>
+          <a class="nav-link flex-grow-1 text-center fw-semibold fs-5" href="#">Contact</a>
+        </div>
+        <form class="d-flex me-3" role="search">
+          <input class="form-control form-control-lg me-2 w-75" type="search" placeholder="Search"
+            aria-label="Search" />
+          <button class="btn btn-outline-success" type="button">Search</button>
+        </form>
+      </div>
+    </nav>
+
+  </div>
 
   <main class="main-content">
     <div class="main-content__left-column">
@@ -57,6 +81,10 @@
   </main>
   <script type="module" src="./scripts/main.js"></script>
   <script type="module" src="./scripts/cart.js"></script>
+  <!-- Bootstrap v5.3 Scripts-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -9,24 +9,11 @@
   flex: 1; /* each takes up equal space */
 }
 
-header {
-  text-align: center;
-  max-height: none;
-  display: flex;
-  flex-wrap: nowrap;
-  overflow: hidden;
-  flex-direction: row;
-  justify-content: center;
+.fixed-container {
+  top: 0;
+  left: 0;
+  position: sticky;
   width: 100%;
-  position: fixed;
-  max-height: 15%;
-}
-
-header img {
-    object-fit: contain;
-    padding: 10px;
-    width: 100px;
-    flex: 0 1 auto;
 }
 
 header {
@@ -38,18 +25,26 @@ header {
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  position: fixed;
   max-height: 15%;
+  padding: 10px 0 10px 0;
 }
 
 header img {
-    object-fit: contain;
-    padding: 10px;
-    width: 100px;
-    flex: 0 1 auto;
+  object-fit: contain;
+  padding: 10px;
+  width: 100px;
+  flex: 0 1 auto;
 }
 
-.cookie-card, .ice-cream-card {
+header img {
+  object-fit: contain;
+  padding: 10px;
+  width: 100px;
+  flex: 0 1 auto;
+}
+
+.cookie-card,
+.ice-cream-card {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -61,7 +56,6 @@ header img {
   display: flex;
   flex-direction: column;
 }
-
 
 .cart {
   display: flex;
