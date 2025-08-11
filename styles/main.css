@@ -220,3 +220,37 @@ nav {
   transition: color 0.3s ease, background-color 0.3s ease;
   border-radius: 5px;
 }
+
+.cookie__button {
+  padding: 4px 8px;
+  background-color: #f0f0f0; /* light grey */
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: normal;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.cookie__button:hover {
+  background-color: #e6e6e6;
+  border-color: #999;
+}
+
+.iceCream__button {
+  padding: 4px 8px;
+  background-color: #f0f0f0; /* light grey */
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: normal;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.iceCream__button:hover {
+  background-color: #e6e6e6;
+  border-color: #999;
+}
